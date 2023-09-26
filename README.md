@@ -1,5 +1,5 @@
 <img src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white" alt="ruby" height="auto" />
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" title="React" alt="React" width="auto" height="auto"/>;
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" title="React" alt="React" width="auto" height="auto"/>
 
 <div align="center">
   <h1><b>Hello Rails React!</b></h1>

@@ -1,12 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import thunk from 'redux-thunk';
-import greetingReducer from './reducers';
+import greetingReducer from './greetings/greetingSlice';
 
 const store = configureStore({
   reducer: {
-    greeting: greetingReducer,
+    greetings: greetingReducer,
   },
-  middleware: [thunk],
 });
 
 export default store;

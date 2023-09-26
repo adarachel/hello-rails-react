@@ -9,28 +9,32 @@ function Greeting() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log("Fetching random greeting...");
+        console.log('Fetching random greeting...');
         dispatch(fetchRandomGreeting());
     }, [dispatch]);
 
-    console.log("Greeting:", greeting);
-    console.log("Loading:", loading);
-    console.log("Error:", error);
+    console.log('Greeting:', greeting);
+    console.log('Loading:', loading);
+    console.log('Error:', error);
 
     return (
         <div>
             {loading ? (
                 <p>Loading...</p>
-            ) : error ? (
-                <p>Error: {error}</p>
             ) : (
-                <div>
-                    <h1>Random Greeting:</h1>
-                    <p>{greeting}</p>
-                </div>
+                error ? (
+                    <p>
+                        Error:
+                        {error}
+                    </p>
+                ) : (
+                    <div>
+                        <h1>Random Greeting:</h1>
+                        <p>{greeting}</p>
+                    </div>
+                )
             )}
         </div>
     );
 }
-
 export default Greeting;
